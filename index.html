@@ -17,27 +17,41 @@
 		body {
 			margin: 0;
 			padding: 0;
-			overflow: hidden;
+			overflow: scroll;
+
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
 		}
 
 		canvas {
 			margin: auto;
 		}
+
+		#container_cit {
+			overflow: scroll;
+		}
+
 	</style>
 </head>
 
 <body>
 	<a id="next" href="https://jaessscript.github.io/thedots/" title="Link to next page">Next-></a>
-	<blockquote id="citation"
-		cite="https://www.politico.eu/article/berlin-big-brother-state-surveillance-facial-recognition-technology/">
-		In 2017, the ministry recruited around <strong>300 volunteers</strong> who agreed, in exchange for a €25 Amazon voucher 
-		🤑, 
-		to have their names and two biometric photos stored in a database and to carry a transponder around with them. 
-		This allowed authorities to know at what day and time they crossed through the station.
-		<br/>
-		On August that year, the project, known as <strong>“Safety Station Südkreuz”</strong>, took off. <br/>
-		(see <q>Big Brother in Berlin</q>, <i>Politico</i>, J. Delcker, 2018)
-	</blockquote>
+	<div id="container_cit">
+		<blockquote id="citation"
+			cite="https://www.politico.eu/article/berlin-big-brother-state-surveillance-facial-recognition-technology/">
+			In 2017, the ministry recruited around <strong>300 volunteers</strong> who agreed, in exchange for a €25
+			Amazon voucher
+			🤑,
+			to have their names and two biometric photos stored in a database and to carry a transponder around with
+			them.
+			This allowed authorities to know at what day and time they crossed through the station.
+			<br /><br />
+			On August that year, the project, known as <strong>“Safety Station Südkreuz”</strong>, took off. <br /><br />
+			(see <q>Big Brother in Berlin</q>, <i>Politico</i>, J. Delcker, 2018)
+		</blockquote>
+	</div>
 	<img id="chaincctvs" src="img/chaincctv.gif" width="100%" height="100%" alt="animated" />
 </body>
 
